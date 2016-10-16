@@ -1,0 +1,142 @@
+
+.clearfix:after {
+	content: "";
+	display: table;
+	width:100%;
+}
+.wrapper {
+	position: relative;
+	font-family: Arial;
+	padding-top: 20px;
+}
+
+.header__wrapper{
+	width: 100%;
+	position: relative;
+}
+.header{
+	width: 1234px;
+	margin: 0 auto;
+	display: block;
+}
+.header__navbar{
+	padding-top: 20px;
+	position: relative;
+}
+.header__navbar-brand{
+	display: inline-block;
+	vertical-align: middle;
+}
+.header__navbar-brand a{
+  font-size: 25px;
+  color: rgba(10, 52, 29, 0.75);
+}
+.header__navbar-brand a:hover{
+	text-decoration: none;
+	color: #333;
+}
+.header__navbar-search{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+.search-field{
+font-size: 16px;
+border-radius: 3px;
+padding: 10px 10px 10px 10px;
+border: 1px solid #ccc;
+}
+.search-btn{
+	border-radius: 3px;
+	padding: 9px;
+font-size: 16px;
+	color: #fff;
+    background-color:rgba(10, 52, 29, 0.75);
+    border-color: rgba(10, 52, 29, 0.75);
+}
+
+.header__menu{
+	margin-top: 40px;
+	display:inline-block;
+	background-color: #D2EFDF;
+}
+.header__menu-item{
+	float: left;
+	position: relative;
+	list-style: none;
+	font-size: 17px;
+	padding: 20px 109px;
+
+}
+.header__menu-item--active, .header__menu-item:hover{
+	background-color: #ADD5BE;
+}
+.header__menu-link, .header__menu-link:hover, .header__menu-link:visited, .header__menu-link:link, .header__menu-link:active{ 
+  font-weight: bold;
+  color: rgba(10, 52, 29, 0.75);
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.description__wrapper{
+	width: 100%;
+	position: relative;
+}
+.description {
+	top:90px;
+	width: 1234px;
+	margin: 0 auto;
+	background-image: url(images/masterclass.jpg);
+  	background-size: cover;
+  
+}
+.description p{
+	padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;  color: #DDD;
+  text-align: center;
+  font-size: 25px;
+}
+
+.timetable__wrapper{
+	width: 100%;
+	position: relative;
+}
+.timetable{
+	margin: 0 auto;
+	width: 1234px;
+}
+.table {
+  margin-top: 20px;
+color: rgba(10, 52, 29, 0.75);
+width: 100%;
+}
+.table > thead > tr > th{
+  border-bottom: 1px solid rgba(10, 52, 29, 0.75);
+  padding: 8px;
+}
+.table > tbody > tr > td{
+  border-top-color: rgba(3,64,4,0.1);
+  padding: 8px;
+  border-top: 1px solid #ddd;
+}
+
+.footer__wrapper{
+	margin-top: 40px;
+	width: 100%;
+position: relative;
+
+}
+.footer{
+margin: 0 auto;
+width: 1234px;
+padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #eee;
+}
