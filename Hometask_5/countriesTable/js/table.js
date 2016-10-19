@@ -62,27 +62,27 @@ copyPre: function(el, target){
 var countries = [
 	{
 		name: "Беларусь",
-		flag: "", 
+		flag: "js/img/bel.jpg", 
 		telCode: 375,		
 		population: 9498364,
 		area: 207600
 	},
 	{
 		name: "Россия",
-		flag: "",
+		flag: "js/img/rus.gif",
 		telCode: 7,		
 		population:146544710 ,
 		area: 17100000
 	},{
 		name:"Украина" ,
-		flag: "",
+		flag: "js/img/ukr.png",
 		telCode: 380,		
 		population:42488512 ,
 		area: 603628
 	},
 	{
 		name: "Грузия" ,
-		flag: "",
+		flag: "js/img/gruzia.gif",
 		telCode: 995,
 		population:3729635,
 		area: 69700
@@ -120,7 +120,7 @@ for(var i=0; i<countries.length+1; i++){
 		}
 		if(i>0&&j==1){
 			td[j]=framework.create("td");
-			td[j].innerHTML=countries[i-1].flag;
+			td[j].innerHTML="<img src="+countries[i-1].flag+">";
 			framework.append(td[j], tr[i]);
 		}
 		if(i>0&&j==2){
