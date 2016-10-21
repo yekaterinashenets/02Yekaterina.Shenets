@@ -1,0 +1,21 @@
+#calculator{
+	font-size: 16px;
+}
+#calculator table {
+	border: solid 2px silver;
+	border-spacing: 3px;
+	background-color: #EEE;
+}
+#calculator table td {
+	border-spacing: 3px;
+}
+#display {
+	width: 155px;
+	text-align: right;
+	font-size: 20px;
+}	
+input[type= button] {
+	width: 50px;
+	height: 40px;
+	margin-bottom: 3px;
+}

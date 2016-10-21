@@ -1,0 +1,22 @@
+#container div{
+	font-family: Arial;
+	font-weight: bold;
+	background-color: #D6ECE2;
+	color:#296047;
+	padding: 20px;
+	margin-top: 20px;
+	width: 44%;
+	position: relative;
+	border-radius: 30px;
+}
+#container div>button{
+	right: 20px;
+	position: absolute;
+	color: #a01d1d;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 50%;
+	border-color: #a01d1d;
+	cursor: pointer;
+	background-color: #eab2b2;
+}
