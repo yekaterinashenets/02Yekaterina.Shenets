@@ -1,0 +1,39 @@
+
+.clearfix:after {
+	content: "";
+	display: table;
+	width:100%;
+}
+
+.description__wrapper{
+	width: 100%;
+	position: relative;
+}
+.description {
+	top:90px;
+	width: 1234px;
+	margin: 0 auto;
+	background-image: url(images/masterclass.jpg);
+  	background-size: cover;
+}
+#description{
+	top:90px;
+	width: 1234px;
+	line-height: 40px;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;  color: #DDD;
+  text-align: center;
+  font-size: 25px;
+}
+.description p{
+	padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;  color: #DDD;
+  text-align: center;
+  font-size: 25px;
+}
