@@ -1,0 +1,15 @@
+.shop{
+	padding: 50px;
+	border: 1px solid grey;
+}
+.shop>p>span, .item >p>span{
+	font-weight: bold;
+}
+.item{
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: top;
+}
+#inputValues{
+	display: none;
+}
