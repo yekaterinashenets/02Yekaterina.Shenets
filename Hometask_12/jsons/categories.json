@@ -1,0 +1,21 @@
+[
+	{
+		"title":"Мягкие игрушки",
+		"hash": "#toys",
+		"filename": "toys.json",
+		"image": "styles/images/toys.jpg"
+	},
+	{
+		"title":"Телефоны",
+		"hash": "#phones",
+		"filename": "phones.json",
+		"image": "styles/images/phones.jpg"
+	},
+	{
+		"title":"Растения",
+		"hash": "#plants",
+		"filename": "plants.json",
+		"image": "styles/images/plants.jpg"
+	}
+
+]

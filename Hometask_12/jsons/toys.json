@@ -1,0 +1,14 @@
+[
+	{
+	"name": "Мишка Teddy",
+	"briefly_description": "Плюшевый мягкий мишка",
+	"price": "17.33",
+	"img": "styles/images/teddy.jpg"
+	},
+	{
+	"name": "свинка Пеппа",
+	"briefly_description": "Из мультика",
+	"price": "20.00",
+	"img": "styles/images/peppa.jpg"
+	}
+]
