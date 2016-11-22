@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WYSIWYG editor</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="editor">
+        <button class="btn" id="bold">Ж</button>
+        <button class="btn" id="italic">К</button>
+        <button class="btn" id="underline">Ч</button>
+        <select id="fontName">
+            <option selected value="Courier">Courier</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times">Times</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+        </select>
+        <select id="fontSize">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option selected value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        <select id="fontColor">
+            <option selected>Цвет текста</option>
+            <option value="black">Черный</option>
+            <option value="#BC8F8F">Светло-коричневый</option>
+            <option value="#FF8C00">Тёмно-оранжевый</option>
+            <option value="#32CD32">Салатовый</option>
+        </select>
+        <select id="textColor">
+            <option selected>Цвет фона</option>
+            <option value="black">Черный</option>
+            <option value="#BC8F8F">Светло-коричневый</option>
+            <option value="#FF8C00">Тёмно-оранжевый</option>
+            <option value="#32CD32">Салатовый</option>
+        </select>
+
+        <br>
+        <button class="btn" id="horizontalLine" alt="horizontal line">__</button>
+        <button class="btn" id="ul">Маркированный список</button>
+        <button class="btn" id="ol">Нумерованный список</button>
+        
+        <button class="btn" id="left">Левый край</button>
+        <button class="btn" id="center">Центр</button>
+        <button class="btn" id="right">Правый край</button>
+        
+        <button class="btn" id="indent">+ Отступ</button>
+        <button class="btn" id="outdent">- Отступ</button>
+        <button class="btn" id="link">Добавить ссылку</button>
+        <button class="btn" id="remove">Отменить форматирование</button>
+    </div>
+    <div id="container">
+        
+    </div>
+
+    <script src="js/framework.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

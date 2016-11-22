@@ -1,0 +1,49 @@
+
+.editor{
+    margin-top: 30px;
+    margin-left: 5%;
+}
+#container {
+    border: 2px solid grey;
+    background-color: #F9F6F6;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: Arial;
+    width: 80%;
+    height: 500px;
+}
+
+.btn,
+.selected {
+    border-radius: 0px;
+    
+    display: inline-block;
+  
+    font-size: 15px;
+    text-decoration: none;
+    margin-left:3px;
+    margin-bottom:5px;
+
+    background-color: #ffffff;
+   color: #989090;
+   border: 1px solid #989090;
+}
+
+.btn:hover,
+.selected:hover {
+    background-color: #989090;
+    border: 1px solid #ffffff;
+      color: #ffffff;
+}
+
+.btn:active,
+.selected:active {
+    position: relative;
+    top: 1px;
+}
+
+.selected,
+.selected:hover {
+    background-color: #B22222;
+    color: white;
+}
