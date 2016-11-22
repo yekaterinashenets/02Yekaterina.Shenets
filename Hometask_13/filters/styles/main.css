@@ -1,0 +1,20 @@
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+#before, #after {
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 40px;
+}
+.btn {
+    margin-top: 20px;
+    margin-left: 277px;
+    font-family: Courier;
+    font-size: 20px;
+    font-weight: bolder;
+    color: grey;
+    background:none;
+    border: 2px solid grey;
+    cursor: pointer;
+}
