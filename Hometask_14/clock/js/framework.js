@@ -89,32 +89,40 @@ containsClass: function(el, className){
 toggleClass: function(el, className){
 	return el.classList.toggle(className)
 },
+ajax: function(method, path, func){
+	var xhr =  new XMLHttpRequest();
+	xhr.onreadystatechange=function(){
+		if(this.readyState==4)
+		if(this.status==200){
+			func(this.responseText);
+			}
+	};
+	xhr.open(method, path, true);
+	xhr.send();
+},
+ajaxGet: function(path, func){
+	var xhr =  new XMLHttpRequest();
+	xhr.onreadystatechange=function(){
+		if(this.readyState==4)
+		if(this.status==200){
+			func(this.responseText);
+			}
+	};
+	xhr.open("GET", path, true);
+	xhr.send();
+},
 pageReady: function(func){
 	return document.addEventListener("DOMContentLoaded", func);
 }
 };
 
 
-/*var el1=framework.create("b");
-var el2=framework.create("i");
-var el3=framework.create("br");
-framework.append(el1, el);
-framework.prepend(el2, el);
-framework.append(el3, el2);
-console.log(framework.isEmpty(el2)); //not empty
-framework.remove(el3);
-console.log(framework.isEmpty(el2)); //empty
-framework.replace(el3, el2);
-framework.copyPre(el3,el1);
-function hi(){
-	console.log("hello");
-}
-framework.event("click", el, hi);
-//framework.unevent("click", el,	hi);
-window.setInterval(function(){
-	framework.dispatch("click", el);
-},1000)
 
+
+/*
+framework.ajaxGet("1.html", function(text){
+	framework.Get.byId("description").innerHTML=text;
+});
 
 
 
