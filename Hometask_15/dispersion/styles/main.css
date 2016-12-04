@@ -1,0 +1,20 @@
+.clearfix:after {
+	content: "";
+	display: table;
+	width:100%;
+}
+.container__wrapper {
+	position: relative;
+	font-family: Courier;
+}
+.container{
+	width: 1280px;
+	padding: 30px;
+	margin: 0 auto;
+}
+#numCalculations{
+	width: 300px;
+}
+#values>div{
+	margin-bottom: 10px;
+}
