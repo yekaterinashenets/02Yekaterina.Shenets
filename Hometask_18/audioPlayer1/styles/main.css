@@ -1,0 +1,109 @@
+.player__wrapper{
+	width: 100%;
+	position: relative;
+	padding-top: 10px;
+}
+.player{
+	width: 700px;
+	margin: 0 auto;
+	border: 1px solid #DFDDDD;
+	padding: 20px;
+	border-radius: 30px;
+
+}
+
+
+#songs{
+	margin: 0 auto;
+	width: 700px;
+	padding:20px;
+	border: 1px solid #DFDDDD;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	border-radius: 30px;
+	top: 10px;
+	position: relative;
+}
+
+#playList>div{
+	cursor: pointer;
+}
+#playList>div:hover{
+	background: #EEEDED; 
+}
+.active{
+	font-style: italic;
+}
+
+
+#currentPlay{
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-size: auto;
+	border:none;
+	border: 0px ;
+	width: 600px;
+	margin-bottom: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 5px;
+	background: #EEEDED; /* Firefox  */
+}
+
+/* Chrome */
+#currentPlay::-webkit-progress-bar {
+background: #EEEDED;
+border-radius: 5px;
+}
+
+/* IE10 */
+#currentPlay {
+color: #908E8E;
+}
+/* Firefox */
+#currentPlay::-moz-progress-bar {
+background: #908E8E;
+border-radius: 5px;
+}
+/* Chrome */
+#currentPlay::-webkit-progress-value {
+background: #908E8E;
+border-radius: 5px;
+}
+
+
+
+
+
+#playedTime, #fullTime{
+	display: inline-block;
+	vertical-align: top;
+}
+.btn{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 1px solid grey;
+	background-size: contain;
+	margin-right: 20px;
+}
+#play{
+	background-image: url(images/play.png);
+}
+#stop{
+	background-image: url(images/stop.png);
+}
+#mute{
+	background-image: url(images/volumeLoud.png);
+}
+#faster{
+	background-image: url(images/faster.png);
+}
+#slower{
+	background-image: url(images/slower.png);
+}
+#loop{
+	background-image: url(images/again.png);
+}
