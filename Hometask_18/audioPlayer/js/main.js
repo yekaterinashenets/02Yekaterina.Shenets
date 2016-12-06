@@ -21,6 +21,7 @@ framework.event("dragleave",framework.Get.byId("songs"), function(ev){
 	
 })
 framework.event("drop",framework.Get.byId("songs"), function(ev){
+
 	ev.preventDefault();
 	ev.stopPropagation();
 	var reader=new FileReader();
@@ -35,12 +36,10 @@ framework.event("drop",framework.Get.byId("songs"), function(ev){
 		framework.event("click", div, function(){
 			for(var i=0; i<framework.Get.byClass("song").length; i++){
 				if(framework.containsClass(framework.Get.byClass("song")[i], "active"))
-					framework.removeClass(framework.Get.byClass("song")[i], "active");}
+					framework.removeClass(framework.Get.byClass("song")[i], "active")};
 			framework.addClass(div, "active");
 			song.src=reader.result;
-			song.play();
-			isPlayed=true;
-			framework.Get.byId("play").style.backgroundImage="url(styles/images/pause.png)";
+			letPlay();
 			for(var i=0; i<songs.length; i++){
 				if(div.innerHTML==songsNames[i]){
 					songNumber=i;
@@ -91,11 +90,24 @@ function currentValue(){
 	if(song.currentTime==song.duration){
 		songNumber++;
 		song.src=songs[songNumber];
+		for(var i=0; i<framework.Get.byClass("song").length; i++){
+				if(framework.containsClass(framework.Get.byClass("song")[i], "active"))
+					framework.removeClass(framework.Get.byClass("song")[i], "active");
+				if(framework.Get.byClass("song")[i].innerHTML==songsNames[songNumber])
+					framework.addClass(framework.Get.byClass("song")[i], "active");
+		};
+		
 		letPlay();
 	}
 	if(songNumber==songs.length){
 			songNumber=0;
 			song.src=songs[songNumber];
+			for(var i=0; i<framework.Get.byClass("song").length; i++){
+				if(framework.containsClass(framework.Get.byClass("song")[i], "active"))
+					framework.removeClass(framework.Get.byClass("song")[i], "active");
+				if(framework.Get.byClass("song")[i].innerHTML==songsNames[songNumber])
+					framework.addClass(framework.Get.byClass("song")[i], "active");
+		};
 			letPlay();
 		}
 };
