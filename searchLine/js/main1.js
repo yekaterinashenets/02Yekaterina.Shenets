@@ -1,6 +1,6 @@
 'use strict';
 var searchLine=framework.Get.byId("searchLine"), offersContainer=framework.Get.byId("searchOffers"), requestContainer=framework.Get.byId("searchRequest"), newsContainer=framework.Get.byId("newsContainer");
-var offers=[], tags, request=[], news;
+var offers=[], tags, request=[], news, searchNews=[];
 
 
 if(localStorage.requestContainer){
@@ -51,6 +51,7 @@ framework.event("click", clear, function(){
 	localStorage.requestContainer="";
 	newsContainer.innerHTML="";
 	searchLine.value="";
+	searchNews=[];
 })
 
 function findNews(){
@@ -59,12 +60,15 @@ function findNews(){
 		for(var j=0; j<request.length; j++){
 			for( var k=0; k<news[i].tags.length;k++){
 				if(news[i].tags[k].indexOf(request[j])==0){
-					createPost(news[i].title, news[i].text, news[i].img, news[i].tags);
-					break;
+					searchNews.push(news[i]);
+					//createPost(news[i].title, news[i].text, news[i].img, news[i].tags);
 				}
 			}
 		}
 	}
+	searchNews=unique(searchNews);
+	for(var i=0; i<searchNews.length; i++)
+		createPost(news[i].title, news[i].text, news[i].img, news[i].tags);
 }
 function createPost(title, text, img, tags){
 
