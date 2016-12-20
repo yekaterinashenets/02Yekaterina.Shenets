@@ -1,0 +1,80 @@
+body{
+	padding-top: 30px;
+}
+.wrapper{
+	width: 100%;
+	position: relative;
+}
+.search{
+	width: 1280px;
+	margin: 0 auto;
+}
+#searchInterface{
+	margin-left: 350px;
+}
+#searchLine{
+	padding: 8px;
+	font-size: 18px;
+	width: 500px;
+	border: none;
+	border: 1px solid black;
+	border-radius: 15px;
+	outline: none;
+}
+#search, #add{
+	background-image: url("images/search.png");
+	width: 40px;
+	height: 40px;
+	padding: 0px;
+	display: inline-block;
+	background-size: contain;
+	background-color: white;
+	border: none;
+	border: 1px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+}
+#add{
+	background-image: url("images/add.jpg");
+}
+#search:hover, #add:hover{
+	background-color: #8fcda2;
+}
+#searchRequest{
+	width: 500px;
+	margin-left: 350px;
+	padding: 5px;
+}
+#searchOffers{
+	width: 500px;
+	margin-left: 350px;
+	padding: 5px;
+}
+p{
+	width: 500px;
+	margin-left: 350px;
+	font: 13.3px Arial;
+	margin-top: 3px;
+}
+.offer{
+	background-color: white;
+	border: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	margin-right: 3px;
+}
+.offer:hover, .chooseOffer{
+	background-color:  #8fcda2;
+}
+#choose{
+	background-color: #e8f3f6;
+	border: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	margin-right: 3px;
+}
