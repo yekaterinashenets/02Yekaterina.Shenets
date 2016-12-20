@@ -1,6 +1,6 @@
 'use strict';
 var searchLine=framework.Get.byId("searchLine"), offersContainer=framework.Get.byId("searchOffers"), requestContainer=framework.Get.byId("searchRequest"), newsContainer=framework.Get.byId("newsContainer");
-var offers=[], tags=[], request=[], news=[];
+var offers=[], tags, request=[], news;
 
 
 if(localStorage.requestContainer){
@@ -49,7 +49,8 @@ framework.event("click", clear, function(){
 	requestContainer.innerHTML="";
 	request=[];
 	localStorage.requestContainer="";
-	newsContainer.innerHTML=""ы
+	newsContainer.innerHTML="";
+	searchLine.value="";
 })
 
 function findNews(){
