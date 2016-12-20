@@ -44,20 +44,31 @@ framework.event("click", search, function(){
 	}
 })
 
+framework.event("click", clear, function(){
+	offersContainer.innerHTML="";
+	requestContainer.innerHTML="";
+	request=[];
+	localStorage.requestContainer="";
+	newsContainer.innerHTML="";
+})
 
 function findNews(){
+	newsContainer.innerHTML="";
 	for(var i=0; i<news.length; i++){
 		for(var j=0; j<request.length; j++){
 			for( var k=0; k<news[i].tags.length;k++){
-				if(news[i].tags[k].indexOf(request[j])==0)
-				createPost(news[i].title, news[i].text, news[i].img);
+				if(news[i].tags[k].indexOf(request[j])==0){
+					createPost(news[i].title, news[i].text, news[i].img, news[i].tags);
+					break;
+				}
 			}
 		}
 	}
 }
-function createPost(title, text, img){
+function createPost(title, text, img, tags){
+
 	var post=framework.create("div");
-	post.innerHTML='<p class="postTitle">'+title+'</p> <br> <p class="postText">'+text+'<img src="'+img+'">';
+	post.innerHTML='<p class="postTitle">'+title+'</p> <br> <p class="postText">'+text+'</p><br> <p class="postTags">'+tags+'</p><img src="'+img+'">';
 	framework.append(post, newsContainer);
 }
 function addOfferToRequest(offer, arr){
