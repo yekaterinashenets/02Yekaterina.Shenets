@@ -21,7 +21,8 @@ body{
 	border-radius: 15px;
 	outline: none;
 }
-#search, #add{
+
+#search, #add, #clear{
 	background-image: url("images/search.png");
 	width: 40px;
 	height: 40px;
@@ -36,7 +37,10 @@ body{
 	outline: none;
 }
 #add{
-	background-image: url("images/add.jpg");
+	background-image: url("images/add.png");
+}
+#clear{
+	background-image: url("images/clear.png");
 }
 #search:hover, #add:hover{
 	background-color: #8fcda2;

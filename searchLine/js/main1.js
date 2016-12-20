@@ -78,10 +78,7 @@ function createPost(title, text, img, tags){
 function addOfferToRequest(offer, arr){
 	arr.push(offer);
 }
-function removeOfferFromRequest(offer, arr){
-	arr.splice(arr.indexOf(offer), 1);
-	console.log(arr);
-}
+
 function formOffers(arr){
 	offersContainer.innerHTML="";
 	for(var i=0; i<arr.length; i++){
