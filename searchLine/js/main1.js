@@ -61,7 +61,6 @@ function findNews(){
 			for( var k=0; k<news[i].tags.length;k++){
 				if(news[i].tags[k].indexOf(request[j])==0){
 					searchNews.push(news[i]);
-					//createPost(news[i].title, news[i].text, news[i].img, news[i].tags);
 				}
 			}
 		}
@@ -71,8 +70,8 @@ function findNews(){
 		createPost(news[i].title, news[i].text, news[i].img, news[i].tags);
 }
 function createPost(title, text, img, tags){
-
 	var post=framework.create("div");
+	post.id="post";
 	post.innerHTML='<p class="postTitle">'+title+'</p> <br> <p class="postText">'+text+'</p><br> <p class="postTags">'+tags+'</p><img src="'+img+'">';
 	framework.append(post, newsContainer);
 }

@@ -78,3 +78,19 @@ p{
 	outline: none;
 	margin-right: 3px;
 }
+#post{
+	width: 600px;
+	margin-left: 350px;
+	border: 1px solid #e0e0e0;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 6px;
+}
+.postTitle, .postText, .postTags{
+	margin: 0px;
+	width: 600px;
+}
+img{
+	width: 70%;
+	margin-left: 80px;
+}
