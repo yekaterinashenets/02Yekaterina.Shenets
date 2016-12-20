@@ -48,8 +48,10 @@ framework.event("click", search, function(){
 function findNews(){
 	for(var i=0; i<news.length; i++){
 		for(var j=0; j<request.length; j++){
-			if(news[i].tags.indexOf(request[j])==0)
+			for( var k=0; k<news[i].tags.length;k++){
+				if(news[i].tags[k].indexOf(request[j])==0)
 				createPost(news[i].title, news[i].text, news[i].img);
+			}
 		}
 	}
 }
